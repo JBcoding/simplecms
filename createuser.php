@@ -7,14 +7,15 @@
 		// form data
 		$username = trim(mysql_prep($_POST['username']));
 		$password = trim(mysql_prep($_POST['password']));
-		$hashed_password = sha1($password);
+		$salt = generate_salt();
+		$hashed_password = sha1($password - $salt);
 		$priv = trim(mysql_prep($_POST['priv']));
 		
 		if(!empty($username)) {
 			$mysql_query = "INSERT INTO user 
-							(username, password, priv) 
+							(username, password, salt, priv) 
 							VALUES ('{$username}', 
-							'{$hashed_password}', '{$priv}')";
+							'{$hashed_password}', '{$salt}', '{$priv}')";
 			$result = mysql_query($mysql_query, $connection);
 			
 			if($result) {
