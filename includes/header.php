@@ -1,22 +1,16 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>:: LOGIN ::</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style.css">
+    <title>JBcoding Login</title>
+    <meta charset=UTF-8>
+    <link href="style.css" rel="stylesheet">
+    <link   rel="icon" 
+            type="image/png" 
+            href="Logo.png">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>
 
-<div class="wrapper">
-	
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.php"><img src="images/mic-mh.svg"></a></li>
-				<li><a href="createpost.php">speakUp!</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	
+<body>
+        <section>
