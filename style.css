@@ -1,0 +1,123 @@
+/*
+        RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*
+        General setup, fonts and stuff
+*/
+body {
+    background:#DFDFDF;
+    color:#444;
+    font-family: "Lucida Grande","Lucida Sans",Tahoma,sans-serif;
+    font-size:1em;
+}
+p {
+    line-height: 1.61em;
+}
+a {
+    color:#444;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:hover {
+    border-bottom: 1px solid;
+}
+img {
+    max-width: 100%;
+}
+/*Here we go*/
+section {
+	width:480px;
+	background-color:#FAFAFA;
+	margin: 100px auto 0 auto;
+	position: relative;
+	overflow: hidden;
+	
+}
+section:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-width: 0 48px 48px 0;
+	border-style: solid;
+	border-color:#DFDFDF #DFDFDF transparent transparent;
+	-webkit-box-shadow: 0 1px 0 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 0 1px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 0 1px rgba(0,0,0,0.3);
+}
+form, h1, h3 {
+	width:90%;
+	margin: 0 auto;
+}
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+}
+h3 {
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+input[type="email"], input[type="password"] {
+	width:100%;
+	font-size: 1.2em;
+	font-family: Tahoma;
+	
+}
+input[type="submit"] {
+	width:50%;
+	margin-top:20px;
+	margin-left:25%;
+	padding: 0;
+	font-size: 1.5em;
+	font-family: Tahoma;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: 0.7em;
+	border-top: 1px solid black;
+	margin-top: 50px;
+}
+#logo {
+	width:15%;
+	border-bottom: 0;
+}
+.no_underline, .no_underline:hover {
+	border-bottom:  0;
+}
+footer {
+	margin-bottom: 10px;
+	padding-top: 7px;
+}
+#forgottenPassword {
+	font-size:0.8em;
+}
+#matches, #error {
+	color:red;
+}
+
+

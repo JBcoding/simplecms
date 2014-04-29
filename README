@@ -1,0 +1,12 @@
+Live example at http://www.319.dk/JBID
+
+Database structure:
+
+Field                   Type            Null        Key       Default       Extra
+
+ID                      int(11)         NO          PRI       NULL          auto_increment
+mail                    varchar(255)    NO          UNI       NULL	
+password                text            NO                    NULL	
+salt                    text            NO                    NULL	
+ConfirmLink             text            NO                    NULL	
+passwordResetLink       text            NO                    NULL	
